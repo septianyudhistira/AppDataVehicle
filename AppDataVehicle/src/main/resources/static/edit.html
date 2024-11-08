@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Data Kendaraan</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+<h1>
+  <img src="img/img-file.png" alt="Logo"> Aplikasi Data Kendaraan
+</h1>
+
+<section id="editVehicle">
+  <h2>Edit Data Kendaraan</h2>
+
+  <form id="editVehicleForm">
+
+    <!-- Baris 1: No. Registrasi dan Tahun Pembuatan -->
+    <div class="form-row-horizontal">
+      <div class="form-group">
+        <label for="editRegistrationNumber">No. Registrasi Kendaraan</label>
+        <input type="text" id="editRegistrationNumber" readonly />
+      </div>
+      <div class="form-group">
+        <label for="editYearOfManufacture">Tahun Pembuatan</label>
+        <input type="number" id="editYearOfManufacture" min="1900" max="2024" required pattern="\d{4}" />
+      </div>
+    </div>
+
+    <!-- Baris 2: Nama Pemilik dan Kapasitas Silinder -->
+    <div class="form-row-horizontal">
+      <div class="form-group">
+        <label for="editOwnerName">Nama Pemilik</label>
+        <input type="text" id="editOwnerName" required />
+      </div>
+      <div class="form-group">
+        <label for="editEngineCapacity">Kapasitas Silinder</label>
+        <input type="number" id="editEngineCapacity" required />
+      </div>
+    </div>
+
+    <!-- Baris 3: Merk Kendaraan dan Warna Kendaraan -->
+    <div class="form-row-horizontal">
+      <div class="form-group">
+        <label for="editVehicleBrand">Merk Kendaraan</label>
+        <input type="text" id="editVehicleBrand" required />
+      </div>
+      <div class="form-group">
+        <label for="editVehicleColor">Warna Kendaraan</label>
+        <select id="editVehicleColor" required>
+          <option value="">Pilih warna</option>
+          <option value="Merah">Merah</option>
+          <option value="Hitam">Hitam</option>
+          <option value="Biru">Biru</option>
+          <option value="Abu-Abu">Abu-Abu</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Baris 4: Alamat Pemilik dan Bahan Bakar -->
+    <div class="form-row-horizontal">
+      <div class="form-group">
+        <label for="editAddress">Alamat Pemilik Kendaraan</label>
+        <textarea id="editAddress" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="editFuelType">Bahan Bakar</label>
+        <input type="text" id="editFuelType" required />
+      </div>
+    </div>
+
+    <!-- Tombol Submit dan Kembali -->
+    <div class="form-actions">
+      <button class="submit-btn" type="submit">Simpan</button>
+      <button class="back-btn" type="button" onclick="window.location.href='index.html'">Kembali</button>
+    </div>
+  </form>
+</section>
+
+<script src="/javascript/editVehicle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+com\seeyou\vehicledataapp\AppDataVehicleApplication.class
+com\seeyou\vehicledataapp\repository\VehicleRepository.class
+com\seeyou\vehicledataapp\service\VehicleService.class
+com\seeyou\vehicledataapp\controller\VehicleController.class
+com\seeyou\vehicledataapp\model\Vehicle.class

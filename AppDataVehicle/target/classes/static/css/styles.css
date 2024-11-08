@@ -1,0 +1,320 @@
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #f4f4f4;
+}
+
+/* Judul halaman */
+h1 {
+    text-align: left;
+}
+
+
+/* Form container untuk menata form */
+.form-container {
+    background-color: #FFE4C4;
+    padding: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: 1px #D2691E solid;
+}
+
+/* Form row untuk menata form Nomor Registrasi dan Nama Pemilik secara vertikal */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Label dan input pada form yang vertikal */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;  /* Pastikan label memenuhi lebar input */
+    text-align: left;
+    display: inline-block;
+}
+
+.form-input {
+    padding: 5px;
+    font-size: 1rem;
+    width: 500px;  /* Lebar input disesuaikan */
+}
+
+/* Gaya untuk bagian tombol */
+.buttons {
+    margin-bottom: 20px;
+    display: flex;               /* Menambahkan flexbox */
+    justify-content: flex-end;   /* Menempatkan tombol di sebelah kanan */
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 10px 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.search-btn, .add-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* Gaya untuk tabel kendaraan */
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+thead th {
+    background-color: #B0C4DE;
+    color: black;
+    padding: 5px; /* Memberi padding pada sel header */
+    border: 2px solid black; /* Garis tebal pada header */
+    text-align: center; /* Mengatur teks agar rata tengah */
+}
+
+tbody td {
+    padding: 5px; /* Memberi padding pada sel isi tabel */
+    border: 1px solid #ddd; /* Garis tipis pada sel isi tabel */
+}
+
+/* Alignment untuk kolom nomor, registrasi, brand, tahun, dan bahan bakar */
+.no, .no-reg, .brand, .year, .fuel, .action-align {
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk tombol di kolom Action (Detail, Edit, Delete) */
+.action-btn {
+    background: none;         /* Menghilangkan latar belakang */
+    border: none;             /* Menghilangkan border */
+    cursor: pointer;         /* Menambahkan kursor pointer */
+    font-size: 14px;          /* Ukuran font */
+    padding: 0;               /* Menghilangkan padding */
+    margin-right: 5px;        /* Spasi antar tombol */
+    display: inline;          /* Menampilkan tombol secara inline */
+    font-weight: bold;        /* Menambahkan teks tebal */
+}
+
+/* Warna teks untuk tombol Detail (Birunya) */
+.detail-btn {
+    color: #B8860B;             /* Warna biru untuk Detail */
+}
+
+.detail-btn:hover {
+    color: #e0a800;
+    text-decoration: none;     /* Menghilangkan garis bawah saat hover */
+}
+
+/* Warna teks untuk tombol Edit (Kuningnya) */
+.edit-btn {
+    color: #007bff;           /* Warna kuning untuk Edit */
+}
+
+.edit-btn:hover {
+    color: #0056b3;           /* Warna kuning lebih gelap saat hover */
+    text-decoration: none;    /* Menghilangkan garis bawah saat hover */
+}
+
+/* Warna teks untuk tombol Delete (Merahnya) */
+.delete-btn {
+    color: #FF0000;           /* Warna merah untuk Delete */
+}
+
+.delete-btn:hover {
+    color: #c82333;           /* Warna merah lebih gelap saat hover */
+    text-decoration: none;    /* Menghilangkan garis bawah saat hover */
+}
+
+#vehicleForm {
+    padding: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk baris form yang horizontal */
+.form-row-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; /* Memberikan jarak antar elemen */
+}
+
+/* Gaya untuk setiap grup input pada form */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Lebar input disesuaikan, supaya tidak melebar */
+}
+
+/* Gaya untuk label dan input */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select {
+    padding: 8px;
+    font-size: 1rem;
+    width: 500px;  /* Lebar penuh untuk input */
+    margin-bottom: 30px;
+}
+
+textarea {
+    padding: 8px;
+    font-size: 1rem;
+    width: 500px;  /* Lebar penuh untuk input */
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.submit-btn, .back-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.back-btn {
+    background-color: gray;
+}
+
+/* Gaya modal konfirmasi */
+.modal {
+    display: none; /* Secara default modal tidak terlihat */
+    position: fixed;
+    z-index: 1; /* Modal berada di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan hitam */
+    padding-top: 100px;
+}
+
+/* Gaya konten modal */
+.modal-content {
+    background-color: #fff;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 700px;
+    margin-top: 200px;
+    padding: 20px;
+    border: 3px solid black;
+    width: 400px;
+    border-radius: 8px;
+}
+
+/* Tombol Close */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Gaya untuk tombol konfirmasi modal */
+.modal-btn-deleted {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-btn-deleted:hover {
+    background-color: #003d82;
+}
+
+.modal-btn-cancel {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal-btn-cancel:hover {
+    background-color: dimgray;
+}
+
+.confirm-delete {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.modal-position {
+    text-align: right;
+}
+
+#editVehicleForm {
+    padding: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Container untuk detail kendaraan */
+#vehicleDetails {
+    background-color: #fff;
+    padding: 40px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menata detail kendaraan */
+#detailsContent {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#detailsContent p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+#detailsContent strong {
+    font-weight: bold;
+}

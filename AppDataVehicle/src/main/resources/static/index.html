@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Data Kendaraan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<h1>
+    <img src="img/img-file.png" alt="Logo"> Aplikasi Data Kendaraan
+</h1>
+
+<!-- Form Pencarian -->
+<div class="form-container">
+    <div class="form-row">
+        <label for="registrationNumber" class="form-label">No Registrasi</label>
+        <input type="text" id="registrationNumber" placeholder="Masukkan Nomor Registrasi" class="form-input">
+    </div>
+    <div class="form-row">
+        <label for="ownerName" class="form-label">Nama Pemilik</label>
+        <input type="text" id="ownerName" placeholder="Masukkan Nama Pemilik" class="form-input">
+    </div>
+</div>
+
+<div class="buttons">
+    <button class="search-btn" id="searchButton">Search</button>
+    <button class="add-btn" onclick="window.location.href='add.html'">Add</button>
+</div>
+
+<!-- Tabel Kendaraan -->
+<table id="vehicleTable">
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>No Registrasi</th>
+        <th>Nama Pemilik</th>
+        <th>Merk Kendaraan</th>
+        <th>Tahun Pembuatan</th>
+        <th>Kapasitas</th>
+        <th>Warna</th>
+        <th>Bahan Bakar</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="vehicleTableBody">
+    <!-- Data kendaraan akan dimasukkan di sini melalui JavaScript -->
+    </tbody>
+</table>
+
+<!-- Modal Konfirmasi Delete -->
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <h2 class="confirm-delete" id="deleteMessage"></h2>
+        <div class="modal-position">
+            <button class="modal-btn-deleted" id="confirmDeleteBtn">Hapus</button>
+            <button class="modal-btn-cancel" onclick="closeModal()">Batal</button>
+        </div>
+    </div>
+</div>
+
+<script src="javascript/monitoring.js"></script>
+</body>
+
+</html>
